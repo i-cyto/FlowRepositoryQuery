@@ -1,0 +1,75 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# FlowRepositoryQuery <img src="man/hex.png" align="right" alt="" width="120" />
+
+<!-- badges: start -->
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+<!-- badges: end -->
+
+{FlowRepositoryQuery} is an R package providing comprehensive data on all public experiments from the FlowRepository database, updated as of August 1, 2024. It also includes a dedicated Shiny application for filtering experiments based on their marker panels, making it easier to explore relevant datasets.
+
+### Installation
+
+You can install the development version of  {FlowRepositoryQuery} like so:
+
+```{r, eval = FALSE}
+remotes::install_github("i-cyto/FlowRepositoryQuery")
+```
+
+
+### Run
+
+You can launch the application by running:
+
+```{r, eval = FALSE}
+FlowRepositoryQuery::run_app()
+```
+
+<br/>
+
+
+<center>
+
+![Application appearance on opening](man/AppView.png)
+
+</center>
+
+````{=html}
+```{r, echo=FALSE, results='asis'}
+xfun::file_string('inst/about.html')
+```
+````
+
+
+#### About
+
+You are reading the doc about version : `r golem::pkg_version()`
+
+This README has been compiled on the
+
+```{r}
+Sys.time()
+```
+
+Here are the tests results and package coverage:
+
+```{r, error = TRUE}
+devtools::check(quiet = TRUE)
+```
+
+```{r echo = FALSE}
+unloadNamespace("FlowRepositoryQuery")
+```

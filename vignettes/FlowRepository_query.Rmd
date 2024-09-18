@@ -1,0 +1,28 @@
+---
+title: "FlowRepository_query"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{FlowRepository_query}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(FlowRepositoryQuery)
+```
+
+```{r run}
+if(interactive()){
+    run_app()
+}
+```
+
+
+
