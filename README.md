@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# FlowRepositoryQuery <img src="man/hex.png" align="right" alt="" width="120" />
+# FlowRepositoryQuery <img src="man/www/hex.png" align="right" alt="" width="120" />
 
 <!-- badges: start -->
 
@@ -21,6 +21,7 @@ You can install the development version of {FlowRepositoryQuery} like
 so:
 
 ``` r
+
 remotes::install_github("i-cyto/FlowRepositoryQuery")
 ```
 
@@ -37,7 +38,8 @@ FlowRepositoryQuery::run_app()
 <center>
 
 <figure>
-<img src="man/AppView.png" alt="Application appearance on opening" />
+<img src="man/www/AppView.png"
+alt="Application appearance on opening" />
 <figcaption aria-hidden="true">Application appearance on
 opening</figcaption>
 </figure>
@@ -159,7 +161,7 @@ This README has been compiled on the
 
 ``` r
 Sys.time()
-#> [1] "2024-09-18 17:53:02 CEST"
+#> [1] "2024-09-20 14:09:35 CEST"
 ```
 
 Here are the tests results and package coverage:
@@ -168,7 +170,7 @@ Here are the tests results and package coverage:
 devtools::check(quiet = TRUE)
 #> ℹ Loading FlowRepositoryQuery
 #> ── R CMD check results ────────────────────────── FlowRepositoryQuery 0.1.0 ────
-#> Duration: 22.8s
+#> Duration: 21.3s
 #> 
 #> 0 errors ✔ | 0 warnings ✔ | 0 notes ✔
 ```

@@ -24,15 +24,15 @@ The user will then be allowed to download a corresponding excel file.
 #############################################################################
 # Search within the running app:
 #############################################################################
-# 
-# CD56, CD16, CD3    # will let user access the 308 experiments 
-#                    # with these three associated markers.
+#
+# cd4,cd25,cd127,fox.*p3    # will let user access the 80 experiments
+#                           # with these four associated markers.
 #
 ## For complex marker names user is able to use regex annotation:
 #
 # t[-_]*bet          # finds all the different strings associated with T-bet
 #                    # i.e. T-bet(72), Tbet(55) and all the names associated
-#                    # with this marker with their florochromes/metals.  
+#                    # with this marker with their florochromes/metals.
 #
 # pd.*l.*1           # finds markers associated with PD-L1.
 #                    # i.e. PD-L1(34), PDL1(16) or even PDL.1(1)

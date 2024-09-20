@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# FlowRepositoryQuery <img src="man/hex.png" align="right" alt="" width="120" />
+# FlowRepositoryQuery <img src="man/www/hex.png" align="right" alt="" width="120" />
 
 <!-- badges: start -->
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
@@ -26,7 +26,9 @@ knitr::opts_chunk$set(
 You can install the development version of  {FlowRepositoryQuery} like so:
 
 ```{r, eval = FALSE}
+
 remotes::install_github("i-cyto/FlowRepositoryQuery")
+
 ```
 
 
@@ -43,7 +45,7 @@ FlowRepositoryQuery::run_app()
 
 <center>
 
-![Application appearance on opening](man/AppView.png)
+![Application appearance on opening](man/www/AppView.png)
 
 </center>
 

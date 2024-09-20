@@ -35,7 +35,18 @@ mod_subset_server <- function(id, r_global) {
         ok <- rep(TRUE, nrow(FlowRepositoryQuery::fr_datasets_agg_panel))
         # coarse loop: search as strings, ie CD3 is found in CD33
         for (mrk in markers) {
-          ok_mrk <- grepl(mrk, panels[ok], ignore.case = TRUE)
+          
+          ok_mrk <-tryCatch({
+            
+            grepl(mrk, panels[ok], ignore.case = TRUE)
+            
+          }, error = function(e) {
+            
+            showNotification(paste("Error: Invalid regular expression -", e$message), type = "error")
+            validate(need(FALSE, "An error occurred with the regular expression. Execution has been stopped."))
+            
+            })
+          
           ok[ok] <- ok_mrk
         }
         table(ok)
