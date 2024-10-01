@@ -13,7 +13,7 @@ mod_textarea_ui <- function(id) {
     div(
       style = "display: flex; align-items: center;",
       # (",", " ", "|" or line break separated)
-      textAreaInput(ns("MarkerText"), "Markers of Interest", 
+      textAreaInput(ns("MarkerText"), "Markers of Interest",
         width = "1000px", height = "100px"
       ),
       div(

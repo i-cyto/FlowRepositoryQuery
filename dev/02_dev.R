@@ -25,6 +25,7 @@ golem::add_module(name = "textarea", with_test = TRUE) # Name of the module
 golem::add_module(name = "subset", with_test = TRUE) # Name of the module
 golem::add_module(name = "download", with_test = TRUE) # Name of the module
 golem::add_module(name = "table_markers", with_test = TRUE) # Name of the module
+golem::add_module(name = "session", with_test = TRUE) # Name of the module
 
 ## Add helper functions ----
 ## Creates fct_* and utils_*

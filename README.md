@@ -21,7 +21,6 @@ You can install the development version of {FlowRepositoryQuery} like
 so:
 
 ``` r
-
 remotes::install_github("i-cyto/FlowRepositoryQuery")
 ```
 
@@ -45,8 +44,8 @@ opening</figcaption>
 </figure>
 
 </center>
-<!DOCTYPE html>
-&#10;<head>
+
+<head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
     <meta name="author" content="Eugénie Lohmann"/>
@@ -138,16 +137,16 @@ you would like to suggest a feature for the query tool, please <a href="https://
 a question</a> on the github repository for this package.</font>
 </p>
 <p style="line-height: 115%; margin-bottom: 0cm"><br/>
-&#10;</p>
+</p>
 <h4 class="western" style="line-height: 115%">Source</h4>
-<p style="line-height: 115%"><font size="3" style="font-size: 12pt"></font>Source code is available on <a href="https://github.com/i-cyto/FlowRepositoryQuery">github</a>.
+<p style="line-height: 115%"><font size="3" style="font-size: 12pt">Source code is available on <a href="https://github.com/i-cyto/FlowRepositoryQuery">github</a>.
 </font></p>
 <br/>
 <h4 class="western" style="line-height: 115%">Credits</h4>
-<p style="line-height: 115%">We thank <font size="3" style="font-size: 12pt">FlowRepository
-</font>for making the data
+<p style="line-height: 115%"><font size="3" style="font-size: 12pt">We thank FlowRepository
+for making the data
 available to the community. We thank <a href="https://isac-net.org/">ISAC</a>
-for supporting FlowRepository.</p>
+for supporting FlowRepository.</font></p>
 <p style="line-height: 115%"><br/>
 <br/>
 &#10;</p>
@@ -161,7 +160,7 @@ This README has been compiled on the
 
 ``` r
 Sys.time()
-#> [1] "2024-09-20 14:09:35 CEST"
+#> [1] "2024-10-01 18:02:00 CEST"
 ```
 
 Here are the tests results and package coverage:
@@ -170,7 +169,12 @@ Here are the tests results and package coverage:
 devtools::check(quiet = TRUE)
 #> ℹ Loading FlowRepositoryQuery
 #> ── R CMD check results ────────────────────────── FlowRepositoryQuery 0.1.0 ────
-#> Duration: 21.3s
+#> Duration: 22.6s
 #> 
-#> 0 errors ✔ | 0 warnings ✔ | 0 notes ✔
+#> ❯ checking installed package size ... NOTE
+#>     installed size is  5.1Mb
+#>     sub-directories of 1Mb or more:
+#>       data   4.1Mb
+#> 
+#> 0 errors ✔ | 0 warnings ✔ | 1 note ✖
 ```

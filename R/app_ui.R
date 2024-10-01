@@ -35,8 +35,19 @@ app_ui <- function(request) {
           )
         ),
         tabPanel(
-          "help", 
-          includeHTML(file.path(app_sys(),"about.html"))
+          "help",
+          includeHTML(file.path(app_sys(), "about.html"))
+        ),
+        tabPanel(
+          "FAQ", tags$br(),
+          sidebarPanel(
+            id = "sidebar",
+            width = 3,
+            mod_session_ui("session_count")
+          ),
+          mainPanel(
+            includeHTML(file.path(app_sys(), "app/www/questions.html"))
+          )
         )
       )
     )
@@ -56,10 +67,11 @@ golem_add_external_resources <- function() {
     "www",
     app_sys("app/www")
   )
-  
+
 
   tags$head(
-    favicon(ext = 'png'),
+    activate_js(),
+    favicon(ext = "png"),
     bundle_resources(
       path = app_sys("app/www"),
       app_title = "FlowRepository query"

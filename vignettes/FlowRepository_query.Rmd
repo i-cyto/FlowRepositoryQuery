@@ -19,8 +19,8 @@ library(FlowRepositoryQuery)
 ```
 
 ```{r run}
-if(interactive()){
-    run_app()
+if (interactive()) {
+  run_app()
 }
 ```
 

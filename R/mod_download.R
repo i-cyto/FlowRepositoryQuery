@@ -58,9 +58,9 @@ mod_download_server <- function(id, r_global) {
     })
 
     current_filename <- reactive({
-      sprintf("fr%s_%s.xlsx",FlowRepositoryQuery::fr_tbl_version, paste0(r_global$markers_to_export, collapse = "_"))
+      sprintf("fr%s_%s.xlsx", FlowRepositoryQuery::fr_tbl_version, paste0(r_global$markers_to_export, collapse = "_"))
     })
-    
+
     output$active_downloadSelection <- downloadHandler(
       filename = function() {
         current_filename()
@@ -76,7 +76,7 @@ mod_download_server <- function(id, r_global) {
         )
       }
     )
-    
+
     output$file_name <- renderText({
       current_filename()
     })

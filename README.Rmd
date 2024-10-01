@@ -26,9 +26,7 @@ knitr::opts_chunk$set(
 You can install the development version of  {FlowRepositoryQuery} like so:
 
 ```{r, eval = FALSE}
-
 remotes::install_github("i-cyto/FlowRepositoryQuery")
-
 ```
 
 
@@ -51,7 +49,7 @@ FlowRepositoryQuery::run_app()
 
 ````{=html}
 ```{r, echo=FALSE, results='asis'}
-xfun::file_string('inst/about.html')
+xfun::file_string("inst/about.html")
 ```
 ````
 

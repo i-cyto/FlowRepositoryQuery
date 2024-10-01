@@ -11,3 +11,7 @@ $run_dev.*
 ^doc$
 ^Meta$
 ^man/www/$
+^app\.R$
+^rsconnect$
+^\.rscignore$
+^manifest.json$
