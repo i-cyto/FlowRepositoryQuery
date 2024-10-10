@@ -12,13 +12,23 @@ app_ui <- function(request) {
 
     fixedPage(
       titlePanel(
-        h2(
-          HTML(paste0(tags$strong("FlowRepository query"))), # style="text-align:center"
+        div(
+          h2(tags$strong("FlowRepository Query"))
+          # ,img(src= "img/hex.png", align="right", alt="", width="120")
         )
       ),
       tabsetPanel(
+        id = "tabs",
         tabPanel(
-          "by markers", tags$br(),
+          "By markers",
+          tags$br(),
+          fluidRow(
+            column(
+              width = 12,
+              includeHTML(file.path(app_sys(), "app/www/insert.html"))
+            )
+          ),
+          tags$br(),
           fluidRow(
             column(
               width = 12,
@@ -35,18 +45,21 @@ app_ui <- function(request) {
           )
         ),
         tabPanel(
-          "help",
+          "Help",
           includeHTML(file.path(app_sys(), "about.html"))
         ),
         tabPanel(
-          "FAQ", tags$br(),
-          sidebarPanel(
-            id = "sidebar",
-            width = 3,
-            mod_session_ui("session_count")
-          ),
-          mainPanel(
-            includeHTML(file.path(app_sys(), "app/www/questions.html"))
+          "About",
+          includeHTML(file.path(app_sys(), "app/www/context.html"))
+        ),
+        tabPanel(
+          "FAQ", 
+          h3("Questions", class = "western", style = "line-height: 200%"),
+          fluidRow(
+            column(
+              width = 12,
+              includeHTML(file.path(app_sys(), "app/www/questions.html"))
+            )
           )
         )
       )
@@ -67,14 +80,18 @@ golem_add_external_resources <- function() {
     "www",
     app_sys("app/www")
   )
-
+  add_resource_path(
+    "img",
+    app_sys("img")
+  )
 
   tags$head(
+    includeHTML(app_sys("app/www/google_analytics.html")), #  ADD THIS LINE HERE IN YOUR APP
     activate_js(),
     favicon(ext = "png"),
     bundle_resources(
       path = app_sys("app/www"),
-      app_title = "FlowRepository query"
+      app_title = "FlowRepository Query"
     )
   )
 }

@@ -51,7 +51,7 @@ usethis::use_test("app")
 # Documentation
 
 ## Vignette ----
-usethis::use_vignette("FlowRepository_query")
+usethis::use_vignette("FlowRepositoryQuery")
 devtools::build_vignettes()
 
 ## Code Coverage----

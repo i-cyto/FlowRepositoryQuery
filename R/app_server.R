@@ -15,6 +15,10 @@ app_server <- function(input, output, session) {
 
   mod_table_markers_server("show_marker_tables", r_global)
 
+  observeEvent(input$go_to_help, {
+    updateTabsetPanel(session, "tabs", selected = "Help")
+  })
+
   session$onSessionEnded(function() {
     isolate(vals$count <- vals$count - 1)
   })

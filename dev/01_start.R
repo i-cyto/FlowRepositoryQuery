@@ -20,7 +20,7 @@
 ##
 golem::fill_desc(
   pkg_name = "FlowRepositoryQuery", # The name of the golem package containing the app (typically lowercase, no underscore or periods)
-  pkg_title = "Flowrepository query", # What the Package Does (One Line, Title Case, No Period)
+  pkg_title = "Flowrepository Query", # What the Package Does (One Line, Title Case, No Period)
   pkg_description = "Sub-selection of experiments from the FlowRepository based on panel markers.", # What the package does (one paragraph).
   authors =  c(person(
     given = "Eugénie", # Your First Name

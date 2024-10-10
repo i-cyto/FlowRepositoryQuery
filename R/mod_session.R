@@ -11,8 +11,9 @@ mod_session_ui <- function(id) {
   ns <- NS(id)
   tagList(
     "There are currently",
-   div( textOutput(ns("count")), 
-               class="session-count"),
+    div(textOutput(ns("count")),
+      class = "session-count"
+    ),
     "session(s) connected to this app."
   )
 }

@@ -5,6 +5,6 @@ account: eugloh
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 12884132
-bundleId:
+bundleId: 9169045
 url: https://eugloh.shinyapps.io/FlowRepositoryQuery/
 version: 1

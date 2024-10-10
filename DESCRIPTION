@@ -1,21 +1,17 @@
 Package: FlowRepositoryQuery
-Title: Query on FlowRepository experiments
+Title: Flowrepository Query
 Version: 0.1.0
 Authors@R: c(
-    person("Eugénie", "Lohmann", email ="eugenie.lohmann@inserm.fr", role = c("aut", "cre")),
-    person("Samuel", "Granjeaud", email = "samuel.granjeaud@inserm.fr", role = "aut")
+    person("Eugénie", "Lohmann", , "eugenie.lohmann@inserm.fr", role = c("aut", "cre")),
+    person("Samuel", "Granjeaud", role = "aut")
   )
-Description: This package provides a comprehensive listing of 
-  all experiments deposited in the FlowRepository as of 2024-08-01.
-  It also includes a Shiny interface that allows users to select 
-  experiments based on the markers present in their panel by querying FlowRepository.
+Description: Sub-selection of experiments from the FlowRepository based on panel markers.
 URL: http://flowrepository.org, https://pubmed.ncbi.nlm.nih.gov/18752282/
 License: MIT + file LICENSE
 Depends: R (>= 3.5.0)
 Imports: 
     config,
     golem,
-    pkgload,
     shiny,
     writexl
 Suggests: 
