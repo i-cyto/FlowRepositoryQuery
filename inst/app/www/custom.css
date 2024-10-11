@@ -51,6 +51,10 @@ p {
   background-color: white;
 }
 
+.faq-item:hover {
+  background-color: #eee;
+}
+
 .faq-answer {
   display: none;
   font-size: 12pt;

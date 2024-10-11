@@ -13,33 +13,41 @@ knitr::opts_chunk$set(
 )
 ```
 
-# FlowRepositoryQuery <img src="man/www/hex.png" align="right" alt="" width="120" />
+# FlowRepositoryQuery <img src="man/www/hex.png" align="right" width="120"/>
 
 <!-- badges: start -->
+
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+
 <!-- badges: end -->
 
 {FlowRepositoryQuery} is an R package providing comprehensive data on all public experiments from the FlowRepository database, updated as of August 1, 2024. It also includes a dedicated Shiny application for filtering experiments based on their marker panels, making it easier to explore relevant datasets.
 
-### Installation
 
-You can install the development version of  {FlowRepositoryQuery} like so:
+### Access the Application via Shiny Server
 
-```{r, eval = FALSE}
+You can directly use the web tool through the following Shiny Server link:
+
+- [FlowRepositoryQuery on ShinyApps.io](https://i-cyto.shinyapps.io/FlowRepositoryQuery/)
+
+
+### Installation Guide
+
+To install the latest version of the `{FlowRepositoryQuery}` package from GitHub, use the following command:
+
+```{r , eval=FALSE}
 remotes::install_github("i-cyto/FlowRepositoryQuery")
 ```
 
 
-### Run
+### Launch the Application
 
-You can launch the application by running:
+Once installed, you can start the Shiny application by running:
 
-```{r, eval = FALSE}
+```{r , eval=FALSE}
 FlowRepositoryQuery::run_app()
 ```
-
 <br/>
-
 
 <center>
 
@@ -49,12 +57,18 @@ FlowRepositoryQuery::run_app()
 
 ````{=html}
 ```{r, echo=FALSE, results='asis'}
-xfun::file_string("inst/about.html")
+xfun::file_string("inst/app/www/about.html")
 ```
+
+```{r, echo=FALSE, results='asis'}
+xfun::file_string("inst/app/www/context.html")
+```
+
+
 ````
+<br/>
 
-
-#### About
+### About
 
 You are reading the doc about version : `r golem::pkg_version()`
 

@@ -12,9 +12,11 @@ app_ui <- function(request) {
 
     fixedPage(
       titlePanel(
-        div(
-          h2(tags$strong("FlowRepository Query"))
-          # ,img(src= "img/hex.png", align="right", alt="", width="120")
+        div(style = "display: flex; align-items: center; justify-content: space-between;padding-top: 10px;",
+            h2(tags$strong("FlowRepository Query"))
+            ,a(href = "https://github.com/i-cyto/FlowRepositoryQuery", target = "_blank",
+              img(src = "img/hex.png", alt = "", width = "90")
+            )
         )
       ),
       tabsetPanel(
@@ -46,7 +48,7 @@ app_ui <- function(request) {
         ),
         tabPanel(
           "Help",
-          includeHTML(file.path(app_sys(), "about.html"))
+          includeHTML(file.path(app_sys(), "app/www/about.html"))
         ),
         tabPanel(
           "About",
@@ -86,7 +88,7 @@ golem_add_external_resources <- function() {
   )
 
   tags$head(
-    includeHTML(app_sys("app/www/google_analytics.html")), #  ADD THIS LINE HERE IN YOUR APP
+    includeHTML(app_sys("app/www/google_analytics.html")), 
     activate_js(),
     favicon(ext = "png"),
     bundle_resources(

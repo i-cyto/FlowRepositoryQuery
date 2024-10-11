@@ -1,10 +1,10 @@
 name: FlowRepositoryQuery
 title: FlowRepositoryQuery
-username: eugloh
-account: eugloh
+username: i-cyto
+account: i-cyto
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
-appId: 12884132
-bundleId: 9207297
-url: https://eugloh.shinyapps.io/FlowRepositoryQuery/
+appId: 12981362
+bundleId: 9207316
+url: https://i-cyto.shinyapps.io/FlowRepositoryQuery/
 version: 1

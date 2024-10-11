@@ -1,12 +1,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# FlowRepositoryQuery <img src="man/www/hex.png" align="right" alt="" width="120" />
+# FlowRepositoryQuery <img src="man/www/hex.png" align="right" width="120"/>
 
 <!-- badges: start -->
 
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+
 <!-- badges: end -->
 
 {FlowRepositoryQuery} is an R package providing comprehensive data on
@@ -15,18 +16,26 @@ August 1, 2024. It also includes a dedicated Shiny application for
 filtering experiments based on their marker panels, making it easier to
 explore relevant datasets.
 
-### Installation
+### Access the Application via Shiny Server
 
-You can install the development version of {FlowRepositoryQuery} like
-so:
+You can directly use the web tool through the following Shiny Server
+link:
+
+- [FlowRepositoryQuery on
+  ShinyApps.io](https://i-cyto.shinyapps.io/FlowRepositoryQuery/)
+
+### Installation Guide
+
+To install the latest version of the `{FlowRepositoryQuery}` package
+from GitHub, use the following command:
 
 ``` r
 remotes::install_github("i-cyto/FlowRepositoryQuery")
 ```
 
-### Run
+### Launch the Application
 
-You can launch the application by running:
+Once installed, you can start the Shiny application by running:
 
 ``` r
 FlowRepositoryQuery::run_app()
@@ -45,15 +54,6 @@ opening</figcaption>
 
 </center>
 
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
-    <meta name="author" content="Eugénie Lohmann"/>
-</head>
-<body lang="en-US" link="#000080" vlink="#800000" dir="ltr">
-<div title="header"><p style="line-height: 100%; margin-bottom: 0.5cm">
-    </p>
-</div>
 <h3 class="western" style="line-height: 200%">How
 To</h3>
 <p style="line-height: 115%"><font size="3" style="font-size: 12pt">The
@@ -92,9 +92,9 @@ enough to enjoy regular expressions for finding markers.<br/><br/>
         <figcaption>Examples of PD-L1 matching</figcaption>
     </div>
 <br/>
-&#10;</p>
-<h4 class="western" style="line-height: 115%"><br/>
-Context</h4>
+&#10;
+<h3 class="western" style="line-height: 200%">
+Context</h3>
 <p style="line-height: 115%"><font size="3" style="font-size: 12pt"><a href="http://flowrepository.org/">FlowRepository</a>
 is an important resource for the community. It contains a large
 number of public experiments that could be useful for improving
@@ -131,28 +131,28 @@ experiments, about 413 k FCS files for a total volume of about 5 TB.<br/>
 </font><br/>
 <br/>
 &#10;</p>
-<h4 class="western" style="line-height: 115%">Contact</h4>
+<h3 class="western" style="line-height: 115%">Contact</h3>
 <p style="line-height: 115%"><font size="3" style="font-size: 12pt">If
 you would like to suggest a feature for the query tool, please <a href="https://github.com/i-cyto/FlowRepositoryQuery/issues">open
 a question</a> on the github repository for this package.</font>
 </p>
 <p style="line-height: 115%; margin-bottom: 0cm"><br/>
 </p>
-<h4 class="western" style="line-height: 115%">Source</h4>
+<h3 class="western" style="line-height: 115%">Source</h3>
 <p style="line-height: 115%"><font size="3" style="font-size: 12pt">Source code is available on <a href="https://github.com/i-cyto/FlowRepositoryQuery">github</a>.
 </font></p>
 <br/>
-<h4 class="western" style="line-height: 115%">Credits</h4>
+<h3 class="western" style="line-height: 115%">Credits</h3>
 <p style="line-height: 115%"><font size="3" style="font-size: 12pt">We thank FlowRepository
 for making the data
 available to the community. We thank <a href="https://isac-net.org/">ISAC</a>
 for supporting FlowRepository.</font></p>
 <p style="line-height: 115%"><br/>
 <br/>
-&#10;</p>
-</body>
+&#10;
+<br/>
 
-#### About
+### About
 
 You are reading the doc about version : 0.1.0
 
@@ -160,7 +160,7 @@ This README has been compiled on the
 
 ``` r
 Sys.time()
-#> [1] "2024-10-01 18:02:00 CEST"
+#> [1] "2024-10-11 12:04:42 CEST"
 ```
 
 Here are the tests results and package coverage:
@@ -169,10 +169,10 @@ Here are the tests results and package coverage:
 devtools::check(quiet = TRUE)
 #> ℹ Loading FlowRepositoryQuery
 #> ── R CMD check results ────────────────────────── FlowRepositoryQuery 0.1.0 ────
-#> Duration: 22.6s
+#> Duration: 22.2s
 #> 
 #> ❯ checking installed package size ... NOTE
-#>     installed size is  5.1Mb
+#>     installed size is  5.2Mb
 #>     sub-directories of 1Mb or more:
 #>       data   4.1Mb
 #> 
