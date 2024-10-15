@@ -48,7 +48,7 @@ The user will then be allowed to download a corresponding excel file.
 
 Authors:
 \itemize{
-  \item Samuel Granjeaud
+  \item Samuel Granjeaud \email{samuel.granjeaud@inserm.fr}
 }
 
 }

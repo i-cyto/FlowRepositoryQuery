@@ -2,6 +2,24 @@ body {
   font-family: 'Helvetica', sans-serif;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.footer_container {
+  position: relative;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: #46444D;
+  box-shadow: 0 50vh 0 50vh #46444D;
+}
+
 .western {
   font-weight: 700;
 }

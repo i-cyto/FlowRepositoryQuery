@@ -104,7 +104,7 @@ as a source of hypotheses.<br/>
 To improve analytical
 pipelines, I'd like to identify experiments and add tags to announce
 when an experiment could be a standard for developing or validating
-one of the steps in the pipeline. Unfortunately, it's very difficult
+one of the steps in the pipeline. Unfortunately, it's very difficult?
 to browse and filter the information presented on the FR public page.
 I have therefore analysed the FR public pages, collected information
 and compiled it into a table. This table is available in the form of
@@ -132,10 +132,13 @@ experiments, about 413 k FCS files for a total volume of about 5 TB.<br/>
 <br/>
 &#10;</p>
 <h3 class="western" style="line-height: 115%">Contact</h3>
-<p style="line-height: 115%"><font size="3" style="font-size: 12pt">If
-you would like to suggest a feature for the query tool, please <a href="https://github.com/i-cyto/FlowRepositoryQuery/issues">open
-a question</a> on the github repository for this package.</font>
-</p>
+<p style="line-height: 115%"><font size="3" style="font-size: 12pt">
+If you would like to suggest a feature for the query tool, please <a href="https://github.com/i-cyto/FlowRepositoryQuery/issues">open
+a question</a> on the github repository for this package.
+</font></p>
+&#10;<p style="line-height: 115%"><font size="3" style="font-size: 12pt">
+For further information, you can contact Samuel Granjeaud at <a href="mailto:samuel.granjeaud@inserm.fr">samuel.granjeaud@inserm.fr</a>.
+</font></p>
 <p style="line-height: 115%; margin-bottom: 0cm"><br/>
 </p>
 <h3 class="western" style="line-height: 115%">Source</h3>
@@ -160,7 +163,7 @@ This README has been compiled on the
 
 ``` r
 Sys.time()
-#> [1] "2024-10-11 12:04:42 CEST"
+#> [1] "2024-10-15 12:21:56 CEST"
 ```
 
 Here are the tests results and package coverage:
@@ -169,7 +172,7 @@ Here are the tests results and package coverage:
 devtools::check(quiet = TRUE)
 #> ℹ Loading FlowRepositoryQuery
 #> ── R CMD check results ────────────────────────── FlowRepositoryQuery 0.1.0 ────
-#> Duration: 22.2s
+#> Duration: 22.6s
 #> 
 #> ❯ checking installed package size ... NOTE
 #>     installed size is  5.2Mb

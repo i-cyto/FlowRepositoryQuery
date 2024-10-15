@@ -2,8 +2,8 @@ Package: FlowRepositoryQuery
 Title: Flowrepository Query
 Version: 0.1.0
 Authors@R: c(
-    person("Eugénie", "Lohmann", , "eugenie.lohmann@inserm.fr", role = c("aut", "cre")),
-    person("Samuel", "Granjeaud", role = "aut")
+    person("Eugénie", "Lohmann", email ="eugenie.lohmann@inserm.fr", role = c("aut", "cre")),
+    person("Samuel", "Granjeaud", email ="samuel.granjeaud@inserm.fr", role =   c("aut") )
   )
 Description: Sub-selection of experiments from the FlowRepository based on panel markers.
 URL: http://flowrepository.org, https://pubmed.ncbi.nlm.nih.gov/18752282/

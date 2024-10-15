@@ -9,7 +9,7 @@ app_ui <- function(request) {
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # Your application UI logic
-
+div(class = "main",
     fixedPage(
       titlePanel(
         div(style = "display: flex; align-items: center; justify-content: space-between;padding-top: 10px;",
@@ -66,6 +66,9 @@ app_ui <- function(request) {
         )
       )
     )
+    )
+
+
   )
 }
 

@@ -15,36 +15,21 @@
       "Repository": null,
       "description": {
         "Package": "FlowRepositoryQuery",
-        "Title": "Query on FlowRepository experiments",
+        "Title": "Flowrepository Query",
         "Version": "0.1.0",
-        "Authors@R": "c(\n    person(\"Eugénie\", \"Lohmann\", email =\"eugenie.lohmann@inserm.fr\", role = c(\"aut\", \"cre\")),\n    person(\"Samuel\", \"Granjeaud\", email = \"samuel.granjeaud@inserm.fr\", role = \"aut\")\n  )",
-        "Description": "This package provides a comprehensive listing of \n  all experiments deposited in the FlowRepository as of 2024-08-01.\n  It also includes a Shiny interface that allows users to select \n  experiments based on the markers present in their panel by querying FlowRepository.",
-        "URL": "http://flowrepository.org,\nhttps://pubmed.ncbi.nlm.nih.gov/18752282/",
+        "Authors@R": "c(\nperson(\"Eugénie\", \"Lohmann\", , \"eugenie.lohmann@inserm.fr\", role = c(\"aut\", \"cre\")),\nperson(\"Samuel\", \"Granjeaud\", role = \"aut\")\n)",
+        "Description": "Sub-selection of experiments from the FlowRepository based on panel markers.",
+        "URL": "http://flowrepository.org, https://pubmed.ncbi.nlm.nih.gov/18752282/",
         "License": "MIT + file LICENSE",
         "Depends": "R (>= 3.5.0)",
-        "Imports": "config, golem, shiny, writexl",
-        "Suggests": "knitr, rmarkdown, spelling, testthat (>= 3.0.0)",
+        "Imports": "config,\ngolem,\nshiny,\nwritexl",
+        "Suggests": "knitr,\nrmarkdown,\nspelling,\ntestthat (>= 3.0.0)",
         "Config/testthat/edition": "3",
         "Encoding": "UTF-8",
         "Language": "en-US",
         "LazyData": "true",
         "RoxygenNote": "7.3.2",
-        "VignetteBuilder": "knitr",
-        "RemoteType": "github",
-        "RemoteHost": "api.github.com",
-        "RemoteRepo": "FlowRepositoryQuery",
-        "RemoteUsername": "i-cyto",
-        "RemoteRef": "HEAD",
-        "RemoteSha": "645ad23d653b3c31f8006e3de01d50ac25396eda",
-        "GithubRepo": "FlowRepositoryQuery",
-        "GithubUsername": "i-cyto",
-        "GithubRef": "HEAD",
-        "GithubSHA1": "645ad23d653b3c31f8006e3de01d50ac25396eda",
-        "NeedsCompilation": "no",
-        "Packaged": "2024-09-20 12:21:14 UTC; lohmann",
-        "Author": "Eugénie Lohmann [aut, cre],\n  Samuel Granjeaud [aut]",
-        "Maintainer": "Eugénie Lohmann <eugenie.lohmann@inserm.fr>",
-        "Built": "R 4.3.3; ; 2024-09-20 12:21:14 UTC; unix"
+        "VignetteBuilder": "knitr"
       }
     },
     "R6": {
@@ -268,23 +253,23 @@
         "Package": "commonmark",
         "Type": "Package",
         "Title": "High Performance CommonMark and Github Markdown Rendering in R",
-        "Version": "1.9.1",
-        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", ,\"jeroen@berkeley.edu\", role = c(\"aut\", \"cre\"),\n        comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"John MacFarlane\", role = \"cph\", comment = \"Author of cmark\"))",
-        "URL": "https://docs.ropensci.org/commonmark/\nhttps://r-lib.r-universe.dev/commonmark\nhttps://github.github.com/gfm/ (spec)",
-        "BugReports": "https://github.com/r-lib/commonmark/issues",
-        "Description": "The CommonMark specification defines a rationalized version of markdown\n    syntax. This package uses the 'cmark' reference implementation for converting\n    markdown text into various formats including html, latex and groff man. In\n    addition it exposes the markdown parse tree in xml format. Also includes opt-in\n    support for GFM extensions including tables, autolinks, and strikethrough text.",
+        "Version": "1.9.2",
+        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", ,\"jeroenooms@gmail.com\", role = c(\"aut\", \"cre\"),\n        comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"John MacFarlane\", role = \"cph\", comment = \"Author of cmark\"))",
+        "Description": "The CommonMark specification <https://github.github.com/gfm/> defines\n    a rationalized version of markdown syntax. This package uses the 'cmark' \n    reference implementation for converting markdown text into various formats\n    including html, latex and groff man. In addition it exposes the markdown\n    parse tree in xml format. Also includes opt-in support for GFM extensions\n    including tables, autolinks, and strikethrough text.",
         "License": "BSD_2_clause + file LICENSE",
+        "URL": "https://docs.ropensci.org/commonmark/\nhttps://ropensci.r-universe.dev/commonmark",
+        "BugReports": "https://github.com/r-lib/commonmark/issues",
         "Suggests": "curl, testthat, xml2",
         "RoxygenNote": "7.2.3",
         "Language": "en-US",
         "Encoding": "UTF-8",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-01-30 11:29:56 UTC; jeroen",
+        "Packaged": "2024-10-03 14:12:30 UTC; jeroen",
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  John MacFarlane [cph] (Author of cmark)",
-        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
+        "Maintainer": "Jeroen Ooms <jeroenooms@gmail.com>",
         "Repository": "CRAN",
-        "Date/Publication": "2024-01-30 12:40:02 UTC",
-        "Built": "R 4.3.3; x86_64-pc-linux-gnu; 2024-09-19 11:38:52 UTC; unix"
+        "Date/Publication": "2024-10-04 12:40:06 UTC",
+        "Built": "R 4.3.3; x86_64-pc-linux-gnu; 2024-10-10 16:29:39 UTC; unix"
       }
     },
     "config": {
@@ -492,7 +477,7 @@
       "description": {
         "Package": "glue",
         "Title": "Interpreted String Literals",
-        "Version": "1.7.0",
+        "Version": "1.8.0",
         "Authors@R": "c(\n    person(\"Jim\", \"Hester\", role = \"aut\",\n           comment = c(ORCID = \"0000-0002-2739-7082\")),\n    person(\"Jennifer\", \"Bryan\", , \"jenny@posit.co\", role = c(\"aut\", \"cre\"),\n           comment = c(ORCID = \"0000-0002-6983-2759\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
         "Description": "An implementation of interpreted string literals, inspired by\n    Python's Literal String Interpolation\n    <https://www.python.org/dev/peps/pep-0498/> and Docstrings\n    <https://www.python.org/dev/peps/pep-0257/> and Julia's Triple-Quoted\n    String Literals\n    <https://docs.julialang.org/en/v1.3/manual/strings/#Triple-Quoted-String-Literals-1>.",
         "License": "MIT + file LICENSE",
@@ -500,20 +485,20 @@
         "BugReports": "https://github.com/tidyverse/glue/issues",
         "Depends": "R (>= 3.6)",
         "Imports": "methods",
-        "Suggests": "crayon, DBI (>= 1.2.0), dplyr, knitr, magrittr, rlang,\nrmarkdown, RSQLite, testthat (>= 3.2.0), vctrs (>= 0.3.0),\nwaldo (>= 0.3.0), withr",
+        "Suggests": "crayon, DBI (>= 1.2.0), dplyr, knitr, magrittr, rlang,\nrmarkdown, RSQLite, testthat (>= 3.2.0), vctrs (>= 0.3.0),\nwaldo (>= 0.5.3), withr",
         "VignetteBuilder": "knitr",
         "ByteCompile": "true",
         "Config/Needs/website": "bench, forcats, ggbeeswarm, ggplot2, R.utils,\nrprintf, tidyr, tidyverse/tidytemplate",
         "Config/testthat/edition": "3",
         "Encoding": "UTF-8",
-        "RoxygenNote": "7.2.3.9000",
+        "RoxygenNote": "7.3.2",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-01-08 16:10:57 UTC; jenny",
+        "Packaged": "2024-09-27 16:00:45 UTC; jenny",
         "Author": "Jim Hester [aut] (<https://orcid.org/0000-0002-2739-7082>),\n  Jennifer Bryan [aut, cre] (<https://orcid.org/0000-0002-6983-2759>),\n  Posit Software, PBC [cph, fnd]",
         "Maintainer": "Jennifer Bryan <jenny@posit.co>",
         "Repository": "CRAN",
-        "Date/Publication": "2024-01-09 23:13:08 UTC",
-        "Built": "R 4.3.3; x86_64-pc-linux-gnu; 2024-09-19 11:41:39 UTC; unix"
+        "Date/Publication": "2024-09-30 22:30:01 UTC",
+        "Built": "R 4.3.3; x86_64-pc-linux-gnu; 2024-10-01 16:05:38 UTC; unix"
       }
     },
     "golem": {
@@ -1174,24 +1159,24 @@
         "Package": "writexl",
         "Type": "Package",
         "Title": "Export Data Frames to Excel 'xlsx' Format",
-        "Version": "1.5.0",
-        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", ,\"jeroen@berkeley.edu\", role = c(\"aut\", \"cre\"),\n      comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"John McNamara\", role = \"cph\",\n      comment = \"Author of libxlsxwriter (see AUTHORS and COPYRIGHT files for details)\"))",
-        "Description": "Zero-dependency data frame to xlsx exporter based on 'libxlsxwriter'. \n    Fast and no Java or Excel required.",
+        "Version": "1.5.1",
+        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", ,\"jeroenooms@gmail.com\", role = c(\"aut\", \"cre\"),\n      comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"John McNamara\", role = \"cph\",\n      comment = \"Author of libxlsxwriter (see AUTHORS and COPYRIGHT files for details)\"))",
+        "Description": "Zero-dependency data frame to xlsx exporter based on 'libxlsxwriter'\n    <https://libxlsxwriter.github.io>. Fast and no Java or Excel required.",
         "License": "BSD_2_clause + file LICENSE",
         "Encoding": "UTF-8",
-        "URL": "https://docs.ropensci.org/writexl/ (website)\nhttps://github.com/ropensci/writexl (devel)\nhttps://libxlsxwriter.github.io (upstream)",
+        "URL": "https://ropensci.r-universe.dev/writexl\nhttps://docs.ropensci.org/writexl/",
         "BugReports": "https://github.com/ropensci/writexl/issues",
         "RoxygenNote": "7.0.2",
         "Suggests": "spelling, readxl, nycflights13, testthat, bit64",
         "Language": "en-US",
         "SystemRequirements": "zlib",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-02-09 14:40:26 UTC; jeroen",
+        "Packaged": "2024-10-03 14:13:23 UTC; jeroen",
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  John McNamara [cph] (Author of libxlsxwriter (see AUTHORS and COPYRIGHT\n    files for details))",
-        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
+        "Maintainer": "Jeroen Ooms <jeroenooms@gmail.com>",
         "Repository": "CRAN",
-        "Date/Publication": "2024-02-09 15:50:02 UTC",
-        "Built": "R 4.3.3; x86_64-pc-linux-gnu; 2024-09-19 11:50:36 UTC; unix"
+        "Date/Publication": "2024-10-04 09:00:02 UTC",
+        "Built": "R 4.3.3; x86_64-pc-linux-gnu; 2024-10-10 16:29:46 UTC; unix"
       }
     },
     "xtable": {
@@ -1245,58 +1230,70 @@
   },
   "files": {
     ".Rbuildignore": {
-      "checksum": "7a2ce5d527e475520e496caef00741c2"
+      "checksum": "65ec409c72190a8758d4308896518d2c"
     },
     ".RData": {
-      "checksum": "0aa932ae005e2bf15f143a84d5b13734"
+      "checksum": "f2d0703c82f596da2045a6afeb6992a2"
     },
     "app.R": {
       "checksum": "baa79d9a8f1c7af47c3ca435ee4f6756"
     },
     "data-raw/15_parse_keywords.R": {
-      "checksum": "5e9e405409c10a1f4ab2a6a88b659e5d"
+      "checksum": "796d7d1bf562268fefb4313b2304e2a1"
     },
     "data-raw/15_parse_keywords.RData": {
       "checksum": "8410276cfd183010c30e0dd419879783"
     },
     "data/dictionary_agg_panel.rda": {
-      "checksum": "dd3be3a1da0eca995ac469f1b6736bd2"
+      "checksum": "fe5ba7edce7bca7a9851dd19937844ec"
     },
     "data/fr_datasets_agg_panel.rda": {
-      "checksum": "cb5eb2395a325517b49c1880ad69dbb8"
+      "checksum": "68c6b856af16478533417facfdeca493"
     },
     "data/fr_datasets.rda": {
-      "checksum": "7ada64c1a7d9e5c944d6f5f4c87036c7"
+      "checksum": "c8e702a356d120c87c02d2bc4951440c"
     },
     "data/fr_panels.rda": {
-      "checksum": "4ccaf8bd1ea1c32a8ff8ded975ca80d2"
+      "checksum": "031a540787c3ce7fb8bf21a191873370"
     },
     "data/fr_tbl_versionl.rda": {
-      "checksum": "6fbe5499a7bcab5e790d689e5bf2c7b6"
+      "checksum": "e5cabb07a7c4bd6de49de586ef7fdb6e"
     },
     "data/fr_tbl.rda": {
-      "checksum": "c67926d88d36ee340682d97e60622106"
+      "checksum": "32464bea57eebed7554560ff4c9c199d"
     },
     "DESCRIPTION": {
-      "checksum": "8b86cb0c502b2aefb4ac3438a50c18b1"
+      "checksum": "bfb8a1ae4f9a5035d2b1bcdf2765bb84"
     },
-    "inst/about.html": {
-      "checksum": "846d648155938c1509f46823975b383c"
+    "inst/app/www/about.html": {
+      "checksum": "c5678c3fdffba8306ec06f014cba1ede"
     },
     "inst/app/www/cd3.png": {
       "checksum": "9079db02eb5facb64149e4a316d7b7e3"
     },
+    "inst/app/www/context.html": {
+      "checksum": "5d344ceaa8f54ac6d39243cc17d5a635"
+    },
     "inst/app/www/custom.css": {
-      "checksum": "ece547f1380307a76f0fd2f96d3fd507"
+      "checksum": "3d97182a55be55e23dcbb4a2a33991a9"
     },
     "inst/app/www/custom.sass": {
-      "checksum": "2559066f70cd5884b933e78bcf52d6e9"
+      "checksum": "f91d06db6d22444a892ad9f565a454e2"
+    },
+    "inst/app/www/faq.js": {
+      "checksum": "0124057af387458302ed935025548f5b"
     },
     "inst/app/www/favicon.png": {
       "checksum": "45695b85f1a39da73d0b84716c95d7e2"
     },
+    "inst/app/www/google_analytics.html": {
+      "checksum": "0a552f0ef0868445ee4048a17aa464d8"
+    },
     "inst/app/www/handlers.js": {
       "checksum": "b817078a636142e0e8ca34f108500055"
+    },
+    "inst/app/www/insert.html": {
+      "checksum": "70ce7b2e7e1fc66de12154fb1a7436e7"
     },
     "inst/app/www/multiples.png": {
       "checksum": "79d58823ad3fcd9fea07e4dbd6be5a59"
@@ -1304,8 +1301,11 @@
     "inst/app/www/pdl1.png": {
       "checksum": "ee656fbdc2b4e04e9d511738f315757e"
     },
+    "inst/app/www/questions.html": {
+      "checksum": "9e79b539bd45cfd14e80e2171aff39dd"
+    },
     "inst/app/www/script.js": {
-      "checksum": "ade26bd81d5ee59cf9d913819d1366fd"
+      "checksum": "49f8814ccf1d909f32b7138f42c56cfb"
     },
     "inst/app/www/tbet.png": {
       "checksum": "a39c0c45d6f13709a4dcf94964a89102"
@@ -1313,41 +1313,47 @@
     "inst/golem-config.yml": {
       "checksum": "254b06b9b8c11fff1500ffaf5fab64a6"
     },
+    "inst/img/hex.png": {
+      "checksum": "45695b85f1a39da73d0b84716c95d7e2"
+    },
     "inst/WORDLIST": {
       "checksum": "28f0fd6b21e0d166fd7497fc4fe72429"
     },
     "NAMESPACE": {
       "checksum": "e440d760dbd938ac29df338fa2d9df97"
     },
-    "R/_disable_autoload.R": {
-      "checksum": "1178c335d6c11555fd1c4ec6098dfee6"
-    },
     "R/app_config.R": {
       "checksum": "6b142158022c3f9dafed30498ea8e7b0"
     },
     "R/app_server.R": {
-      "checksum": "8e6e82bdbae4d3b8afb81c3e63f7264a"
+      "checksum": "0ef39595ed837c75c7d9658748e71bb2"
     },
     "R/app_ui.R": {
-      "checksum": "962f2a9665f57a02af43d1670a35cbe8"
+      "checksum": "de72827e2bb051d7d78700618d058343"
     },
     "R/data.R": {
       "checksum": "b065e8d53eefd867d3772eb309e275b2"
     },
     "R/flowrepository.query-package.R": {
-      "checksum": "415a01784c52ac2f6d984087881088a1"
+      "checksum": "14a7a8ba764897e5bdfeedc149a96341"
+    },
+    "R/global.R": {
+      "checksum": "02af9547590bd7672480982ef83f6e19"
     },
     "R/mod_download.R": {
-      "checksum": "468705a39389778733d135cc2c7d757d"
+      "checksum": "e88f5e693995fb6aee4af847234973d6"
+    },
+    "R/mod_session.R": {
+      "checksum": "34e57a49cd3dddf2a7e27d69ce27f218"
     },
     "R/mod_subset.R": {
-      "checksum": "18ce0c7a1468e5ced8ffad43655d3992"
+      "checksum": "c346ecbc1be71128503344b034a5f196"
     },
     "R/mod_table_markers.R": {
       "checksum": "e6b1ddadb6e374fef42a06b6c77480eb"
     },
     "R/mod_textarea.R": {
-      "checksum": "f6c4313d4c5a7db7b4f987f26925a1cb"
+      "checksum": "8ba0953985f75ca4f81bf58a1f524589"
     },
     "R/run_app.R": {
       "checksum": "4bad201e4967d97aef17ff36a8dd230b"
