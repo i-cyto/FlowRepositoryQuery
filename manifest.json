@@ -17,12 +17,12 @@
         "Package": "FlowRepositoryQuery",
         "Title": "Flowrepository Query",
         "Version": "0.1.0",
-        "Authors@R": "c(\nperson(\"Eugénie\", \"Lohmann\", , \"eugenie.lohmann@inserm.fr\", role = c(\"aut\", \"cre\")),\nperson(\"Samuel\", \"Granjeaud\", role = \"aut\")\n)",
+        "Authors@R": "c(\nperson(\"Eugénie\", \"Lohmann\", email =\"eugenie.lohmann@inserm.fr\", role = c(\"aut\", \"cre\")),\nperson(\"Samuel\", \"Granjeaud\", email =\"samuel.granjeaud@inserm.fr\", role =   c(\"aut\") )\n)",
         "Description": "Sub-selection of experiments from the FlowRepository based on panel markers.",
         "URL": "http://flowrepository.org, https://pubmed.ncbi.nlm.nih.gov/18752282/",
         "License": "MIT + file LICENSE",
         "Depends": "R (>= 3.5.0)",
-        "Imports": "config,\ngolem,\nshiny,\nwritexl",
+        "Imports": "config,\ngolem,\npkgload,\nshiny,\nwritexl",
         "Suggests": "knitr,\nrmarkdown,\nspelling,\ntestthat (>= 3.0.0)",
         "Config/testthat/edition": "3",
         "Encoding": "UTF-8",
@@ -1233,7 +1233,7 @@
       "checksum": "65ec409c72190a8758d4308896518d2c"
     },
     ".RData": {
-      "checksum": "f2d0703c82f596da2045a6afeb6992a2"
+      "checksum": "eeacd818d39f0d49e7cf499297632f4d"
     },
     "app.R": {
       "checksum": "baa79d9a8f1c7af47c3ca435ee4f6756"
@@ -1263,7 +1263,7 @@
       "checksum": "32464bea57eebed7554560ff4c9c199d"
     },
     "DESCRIPTION": {
-      "checksum": "bfb8a1ae4f9a5035d2b1bcdf2765bb84"
+      "checksum": "37543cbfcceb3a4c6e8f0c7cd4f27102"
     },
     "inst/app/www/about.html": {
       "checksum": "c5678c3fdffba8306ec06f014cba1ede"
@@ -1272,13 +1272,13 @@
       "checksum": "9079db02eb5facb64149e4a316d7b7e3"
     },
     "inst/app/www/context.html": {
-      "checksum": "5d344ceaa8f54ac6d39243cc17d5a635"
+      "checksum": "ec0536a79fda517d38b0a1ce420e3603"
     },
     "inst/app/www/custom.css": {
-      "checksum": "3d97182a55be55e23dcbb4a2a33991a9"
+      "checksum": "d2bd701e8e53ffa0d2f77f9617ac13e9"
     },
     "inst/app/www/custom.sass": {
-      "checksum": "f91d06db6d22444a892ad9f565a454e2"
+      "checksum": "f4b8d9789371114d63e86996302de8bd"
     },
     "inst/app/www/faq.js": {
       "checksum": "0124057af387458302ed935025548f5b"
@@ -1287,7 +1287,7 @@
       "checksum": "45695b85f1a39da73d0b84716c95d7e2"
     },
     "inst/app/www/google_analytics.html": {
-      "checksum": "0a552f0ef0868445ee4048a17aa464d8"
+      "checksum": "793037e4900a4186bef365e3e6491fbd"
     },
     "inst/app/www/handlers.js": {
       "checksum": "b817078a636142e0e8ca34f108500055"
@@ -1322,6 +1322,9 @@
     "NAMESPACE": {
       "checksum": "e440d760dbd938ac29df338fa2d9df97"
     },
+    "R/_disable_autoload.R": {
+      "checksum": "1178c335d6c11555fd1c4ec6098dfee6"
+    },
     "R/app_config.R": {
       "checksum": "6b142158022c3f9dafed30498ea8e7b0"
     },
@@ -1329,7 +1332,7 @@
       "checksum": "0ef39595ed837c75c7d9658748e71bb2"
     },
     "R/app_ui.R": {
-      "checksum": "de72827e2bb051d7d78700618d058343"
+      "checksum": "5a7c01f8600fa9c810bb888ef6f0c26f"
     },
     "R/data.R": {
       "checksum": "b065e8d53eefd867d3772eb309e275b2"
