@@ -17,19 +17,34 @@
         "Package": "FlowRepositoryQuery",
         "Title": "Flowrepository Query",
         "Version": "0.1.0",
-        "Authors@R": "c(\nperson(\"Eugénie\", \"Lohmann\", email =\"eugenie.lohmann@inserm.fr\", role = c(\"aut\", \"cre\")),\nperson(\"Samuel\", \"Granjeaud\", email =\"samuel.granjeaud@inserm.fr\", role =   c(\"aut\") )\n)",
+        "Authors@R": "c(\n    person(\"Eugénie\", \"Lohmann\", email =\"eugenie.lohmann@inserm.fr\", role = c(\"aut\", \"cre\")),\n    person(\"Samuel\", \"Granjeaud\", email =\"samuel.granjeaud@inserm.fr\", role =   c(\"aut\") )\n  )",
         "Description": "Sub-selection of experiments from the FlowRepository based on panel markers.",
-        "URL": "http://flowrepository.org, https://pubmed.ncbi.nlm.nih.gov/18752282/",
+        "URL": "http://flowrepository.org,\nhttps://pubmed.ncbi.nlm.nih.gov/18752282/",
         "License": "MIT + file LICENSE",
         "Depends": "R (>= 3.5.0)",
-        "Imports": "config,\ngolem,\npkgload,\nshiny,\nwritexl",
-        "Suggests": "knitr,\nrmarkdown,\nspelling,\ntestthat (>= 3.0.0)",
+        "Imports": "config, golem, pkgload, shiny, writexl",
+        "Suggests": "knitr, rmarkdown, spelling, testthat (>= 3.0.0)",
         "Config/testthat/edition": "3",
         "Encoding": "UTF-8",
         "Language": "en-US",
         "LazyData": "true",
         "RoxygenNote": "7.3.2",
-        "VignetteBuilder": "knitr"
+        "VignetteBuilder": "knitr",
+        "RemoteType": "github",
+        "RemoteHost": "api.github.com",
+        "RemoteRepo": "FlowRepositoryQuery",
+        "RemoteUsername": "i-cyto",
+        "RemoteRef": "web",
+        "RemoteSha": "3e6519f1a5d3a47c5b0832e2f3d22bedea7cf3aa",
+        "GithubRepo": "FlowRepositoryQuery",
+        "GithubUsername": "i-cyto",
+        "GithubRef": "web",
+        "GithubSHA1": "3e6519f1a5d3a47c5b0832e2f3d22bedea7cf3aa",
+        "NeedsCompilation": "no",
+        "Packaged": "2024-10-16 17:30:53 UTC; lohmann",
+        "Author": "Eugénie Lohmann [aut, cre],\n  Samuel Granjeaud [aut]",
+        "Maintainer": "Eugénie Lohmann <eugenie.lohmann@inserm.fr>",
+        "Built": "R 4.3.3; ; 2024-10-16 17:30:53 UTC; unix"
       }
     },
     "R6": {
@@ -1287,7 +1302,7 @@
       "checksum": "45695b85f1a39da73d0b84716c95d7e2"
     },
     "inst/app/www/google_analytics.html": {
-      "checksum": "793037e4900a4186bef365e3e6491fbd"
+      "checksum": "1d02e56c016907b006ec133ee34f9fba"
     },
     "inst/app/www/handlers.js": {
       "checksum": "b817078a636142e0e8ca34f108500055"

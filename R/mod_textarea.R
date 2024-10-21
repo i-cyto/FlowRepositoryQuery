@@ -13,11 +13,11 @@ mod_textarea_ui <- function(id) {
     div(
       style = "display: flex; align-items: center;",
       # (",", " ", "|" or line break separated)
-      textAreaInput(ns("MarkerText"), 
-                    "Markers of Interest",
-                    placeholder = "Enter marker panel here", 
-                    width = "1000px", 
-                    height = "100px"
+      textAreaInput(ns("MarkerText"),
+        "Markers of Interest",
+        placeholder = "Enter marker panel here",
+        width = "100%",
+        height = "100px"
       ),
       div(
         mod_subset_ui(ns("button")),

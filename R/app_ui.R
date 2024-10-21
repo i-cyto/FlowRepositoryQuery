@@ -9,66 +9,67 @@ app_ui <- function(request) {
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # Your application UI logic
-div(class = "main",
-    fixedPage(
-      titlePanel(
-        div(style = "display: flex; align-items: center; justify-content: space-between;padding-top: 10px;",
-            h2(tags$strong("FlowRepository Query"))
-            ,a(href = "https://github.com/i-cyto/FlowRepositoryQuery", target = "_blank",
+    div(
+      class = "main",
+      fixedPage(
+        titlePanel(
+          div(
+            style = "display: flex; align-items: center; justify-content: space-between;padding-top: 10px;",
+            h2(tags$strong("FlowRepository Query")),
+            a(
+              href = "https://github.com/i-cyto/FlowRepositoryQuery", target = "_blank",
               img(src = "img/hex.png", alt = "", width = "90")
-            )
-        )
-      ),
-      tabsetPanel(
-        id = "tabs",
-        tabPanel(
-          "By markers",
-          tags$br(),
-          fluidRow(
-            column(
-              width = 12,
-              includeHTML(file.path(app_sys(), "app/www/insert.html"))
-            )
-          ),
-          tags$br(),
-          fluidRow(
-            column(
-              width = 12,
-              mod_textarea_ui("textarea")
-            )
-          ),
-          fluidRow(
-            column(
-              width = 12,
-              mod_download_ui("download"),
-              tags$br(),
-              mod_table_markers_ui("show_marker_tables")
             )
           )
         ),
-        tabPanel(
-          "Help",
-          includeHTML(file.path(app_sys(), "app/www/about.html"))
-        ),
-        tabPanel(
-          "About",
-          includeHTML(file.path(app_sys(), "app/www/context.html"))
-        ),
-        tabPanel(
-          "FAQ", 
-          h3("Questions", class = "western", style = "line-height: 200%"),
-          fluidRow(
-            column(
-              width = 12,
-              includeHTML(file.path(app_sys(), "app/www/questions.html"))
+        tabsetPanel(
+          id = "tabs",
+          tabPanel(
+            "By markers",
+            tags$br(),
+            fluidRow(
+              column(
+                width = 12,
+                includeHTML(file.path(app_sys(), "app/www/insert.html"))
+              )
+            ),
+            tags$br(),
+            fluidRow(
+              column(
+                width = 12,
+                mod_textarea_ui("textarea")
+              )
+            ),
+            fluidRow(
+              column(
+                width = 12,
+                mod_download_ui("download"),
+                tags$br(),
+                mod_table_markers_ui("show_marker_tables")
+              )
+            )
+          ),
+          tabPanel(
+            "Help",
+            includeHTML(file.path(app_sys(), "app/www/about.html"))
+          ),
+          tabPanel(
+            "About",
+            includeHTML(file.path(app_sys(), "app/www/context.html"))
+          ),
+          tabPanel(
+            "FAQ",
+            h3("Questions", class = "western", style = "line-height: 200%"),
+            fluidRow(
+              column(
+                width = 12,
+                includeHTML(file.path(app_sys(), "app/www/questions.html"))
+              )
             )
           )
         )
       )
     )
-    )
-
-
   )
 }
 
@@ -91,7 +92,7 @@ golem_add_external_resources <- function() {
   )
 
   tags$head(
-    includeHTML(app_sys("app/www/google_analytics.html")), 
+    includeHTML(app_sys("app/www/google_analytics.html")),
     activate_js(),
     favicon(ext = "png"),
     bundle_resources(

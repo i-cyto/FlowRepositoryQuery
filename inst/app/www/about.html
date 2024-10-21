@@ -1,47 +1,38 @@
+<h3 class="western">How To</h3>
+<p>
+    The current tool aims to make it easier to search FlowRepository's public experiments by panel markers. Filtering the panel column is not easy without a regular expression because the names of the markers are not really standardized by humans.
+</p>
+<p>
+    CD3 is not CD33, even though CD33 contains CD3. You therefore need to search for words rather than strings of characters, as shown in the illustration below.
+</p>
+<div class="image-container">
+    <img src="www/cd3.png" alt="Illustration of CD3 search">
+    <figcaption>Top match examples with CD3</figcaption>
+</div>
+</br>
+<p>
+    You can enter several markers at once, and they will all be present in the resulting selection of experiments.
+</p>
+<div class="image-container">
+    <figure>
+        <img src="www/multiples.png" alt="Illustration of multiple markers search">
+        <figcaption>Results of a search for several markers</figcaption>
+    </figure>
+</div>
+</br>
 
-<h3 class="western" style="line-height: 200%">How
-To</h3>
-<p style="line-height: 115%"><font size="3" style="font-size: 12pt">The
-current tool aims to make it easier to search FlowRepository's public
-experiments by panel markers. Filtering the panel column is not easy
-without a regular expression because the names of the markers are not
-really standardised by humans.</font></p>
-<p style="line-height: 115%"><font size="3" style="font-size: 12pt">CD3 is not CD33, even though CD33 contains CD3. You therefore need to search for words rather than strings of characters, as shown in the illustration below.<br/><br/>    
-  <div class="image-container">
-        <img src="www/cd3.png" alt="Illustration of cd3 search">
-        <figcaption>Top match examples with CD3</figcaption>
-  </div>
-<br/>    
-    You can enter several markers at once, and they will all be present in
-the resulting selection of experiments. </font>
-<br/><br/>    
-
-    <div class="image-container"><figure>
-        <img src="www/multiples.png" alt="Illustration of multiples markers search">
-        <figcaption>Results on a search for several markers</figcaption></figure>
-
-  </div>
-
-
-<br/>
-PD-L1 has many spellings, as does PD1. Therefore, the search must include
-wildcards to match separators such as '-', '_' or even '.'. This is
-the role of '.', which symbolises the wildcard character. 
-
-For example, the query 'PD.L1' will find 'PD-L1', 'PD_L1', but also
-'PDXL1'. The latter is not relevant but could be easily removed. The
-most important thing is probably not to miss any writing. If the
-possible characters are known, they can be listed, for example
-'PD[-_.]L1' for 'PD-L1', 'PD_L1' or 'PD.L1'. 
-
-Postfixing a character or a sequence with '*' indicates that it may or may not be present.
-For example 'PD[-_.]*L1' will also match 'PDL1'. You probably know
-enough to enjoy regular expressions for finding markers.<br/><br/>    
-
-    <div class="image-container">
-        <img src="www/pdl1.png" alt="Illustration of pdl1 search">
-        <figcaption>Examples of PD-L1 matching</figcaption>
-    </div>
-<br/>
-
+<p>
+    PD-L1 has many spellings, as does PD1. Therefore, the search must include wildcards to match separators such as '-', '_' or even '.'. This is the role of '.', which symbolizes the wildcard character.
+</p>
+<p>
+    For example, the query 'PD.L1' will find 'PD-L1', 'PD_L1', but also 'PDXL1'. The latter is not relevant but could be easily removed. The most important thing is probably not to miss any writing. If the possible characters are known, they can be listed, for example, 'PD[-_.]L1' for 'PD-L1', 'PD_L1', or 'PD.L1'.
+</p>
+<p>
+    Postfixing a character or a sequence with '*' indicates that it may or may not be present. For example, 'PD[-_.]*L1' will also match 'PDL1'. You probably know enough to enjoy regular expressions for finding markers.
+</p>
+<div class="image-container">
+    <img src="www/pdl1.png" alt="Illustration of PD-L1 search">
+    <figcaption>Examples of PD-L1 matching</figcaption>
+</div>
+</br>
 
