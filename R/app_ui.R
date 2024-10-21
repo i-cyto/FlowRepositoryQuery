@@ -92,7 +92,6 @@ golem_add_external_resources <- function() {
   )
 
   tags$head(
-    includeHTML(app_sys("app/www/google_analytics.html")),
     activate_js(),
     favicon(ext = "png"),
     bundle_resources(

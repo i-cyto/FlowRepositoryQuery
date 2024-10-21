@@ -1,6 +1,6 @@
 Package: FlowRepositoryQuery
 Title: Flowrepository Query
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
     person("Eugénie", "Lohmann", email ="eugenie.lohmann@inserm.fr", role = c("aut", "cre")),
     person("Samuel", "Granjeaud", email ="samuel.granjeaud@inserm.fr", role =   c("aut") )
