@@ -30,7 +30,7 @@ To install the latest version of the `{FlowRepositoryQuery}` package
 from GitHub, use the following command:
 
 ``` r
-remotes::install_github("i-cyto/FlowRepositoryQuery")
+remotes::install_github("i-cyto/FlowRepositoryQuery", ref="main")
 ```
 
 ### Launch the Application
